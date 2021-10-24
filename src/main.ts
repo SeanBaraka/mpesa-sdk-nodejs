@@ -1,4 +1,3 @@
-import * as https from 'https'
 import  axios from 'axios'
 
 export class MpesaApi {
@@ -11,7 +10,7 @@ export class MpesaApi {
         } else {
             this.url = 'https://api.safaricom.co.ke'
         }
-        axios.defaults.url = this.url;
+        axios.defaults.baseURL = this.url;
     }
 
     private consumerKey: string;
@@ -24,11 +23,12 @@ export class MpesaApi {
      */
     public async getAccessToken() {
         const authKey = Buffer.from(`${this.consumerKey}:${this.secret}`).toString('base64');
-        
-        const request = await axios.get(`/oauth/v1/generate?grant_type=client_credentials`, {
+        // console.log(axios.defaults.url)
+        const request = await axios.get('/oauth/v1/generate?grant_type=client_credentials', {
             headers: {
-                'Authorization': `Basic ${authKey}`
-            }});
+                Authorization: `Basic ${authKey}`
+            }
+        })
         return Promise.resolve(request.data)
 
     }
