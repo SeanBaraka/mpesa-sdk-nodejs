@@ -1,0 +1,35 @@
+{
+  "name": "mpesa-nodejs-sdk",
+  "version": "1.0.3",
+  "description": "Node.Js wrapper for Safaricom's Mpesa API. Written in Typescript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cashout": "node dist/index.js",
+    "start": "tsc && npm run cashout"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanBaraka/mpesa-sdk-nodejs.git"
+  },
+  "keywords": [
+    "Mpesa",
+    "Daraja",
+    "Mpesa-Node",
+    "Safaricom",
+    "Typescript"
+  ],
+  "author": "Sean Baraka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanBaraka/mpesa-sdk-nodejs/issues"
+  },
+  "homepage": "https://github.com/SeanBaraka/mpesa-sdk-nodejs#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.4",
+    "dotenv": "^10.0.0"
+  },
+  "dependencies": {
+    "axios": "^0.23.0"
+  }
+}
