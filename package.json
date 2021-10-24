@@ -1,10 +1,9 @@
 {
   "name": "mpesa-nodejs-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Node.Js wrapper for Safaricom's Mpesa API. Written in Typescript",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "cashout": "node dist/index.js",
     "start": "tsc && npm run cashout"
   },
