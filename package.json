@@ -1,6 +1,6 @@
 {
   "name": "mpesa-nodejs-sdk",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Node.Js wrapper for Safaricom's Mpesa API. Written in Typescript",
   "main": "dist/index.js",
   "scripts": {
